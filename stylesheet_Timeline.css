@@ -100,8 +100,28 @@
     border-left: 7px solid #EFE3F9; 
 }}
 
+
 @media only screen and (min-width: 700px) {
 .Timeline-date::before {
-    margin-left: auto;
     margin-right: 0px;
 } }
+
+.Timeline-interrupt {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    font-size: 24px;
+    max-width: 650px;
+    
+    display:block;
+    position:relative;
+}
+
+.Timeline-interrupt:after, .Timeline-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
