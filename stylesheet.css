@@ -15,6 +15,7 @@ h1 {
 
 h2 {
     font-size: 28px;
+    margin-top: 5px;
 }
 
 p {
@@ -37,6 +38,7 @@ section {
     position: fixed;
     top: 0px;
     background-color: rgba(255,255,255,0.8);
+    z-index:9999;
 }
 
 .navbar-container {
@@ -83,46 +85,4 @@ section {
     height: 100%;
     display: block;
     margin-left: 20px;
-}
-
-.Timeline-section {
-    background-color: #EAD4FC;
-    display: block;
-}
-
-.Timeline-container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Timeline-container {
-    position: relative;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    
-}
-#Timeline-container::before {
-    content: '';
-    position: absolute;
-    left: 29px;
-    top: 0;
-    width: 4px;
-    background-color: #826F92;
-    height: 100%;
-}
-
-.Timeline-parent {
-
-}
-
-.Timeline-child {
-    width: 100%;
-    margin: 0px 0px 40px 0px;
-    background-color: #EFE3F9;
-    position: relative;
-}
-
-.headline-timeline {
-    background-color: blue;
 }
