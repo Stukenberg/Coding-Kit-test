@@ -1,0 +1,128 @@
+body {
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: #505050;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0 20px 0;
+    font-weight: 400;
+    letter-spacing: -0,2px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+a:link {
+    color: #505050;
+    text-decoration: none;
+    
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.navbar-container {
+    max-width: 960px;
+    height: 60px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.Menu-Item {
+    margin-left: 20px;
+    display: inline;
+    
+}
+
+.Menu-Item:hover {
+    text-decoration: underline;
+}
+
+.bg-image-header {
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title1 h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: -0,5px;
+}
+
+.Text-section {
+    max-width: 960px;
+    height: 100%;
+    display: block;
+    margin-left: 20px;
+}
+
+.Timeline-section {
+    background-color: #EAD4FC;
+    display: block;
+}
+
+.Timeline-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Timeline-container {
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+#Timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 29px;
+    top: 0;
+    width: 4px;
+    background-color: #826F92;
+    height: 100%;
+}
+
+.Timeline-parent {
+
+}
+
+.Timeline-child {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    background-color: #EFE3F9;
+    position: relative;
+}
+
+.headline-timeline {
+    background-color: blue;
+}
