@@ -1,6 +1,5 @@
 .Timeline-section {
-    background-color: #EAD4FC;
-    display: block;
+    background-color: #d5f4e6;
 }
 /*---*/
 
@@ -21,10 +20,10 @@
 #Timeline-container::before {
     content: '';
     position: absolute;
-    left: 29px;
+    left: 33px;
     top: 0;
     width: 4px;
-    background-color: #826F92;
+    background-color: #80ced6;
     height: 100%;
 }
 /*---*/
@@ -32,10 +31,10 @@
 .Timeline-date {
     height: 60px;
     width: 60px;
-    border: 6px solid #E3F9ED;
+    border: 6px solid #fefbd8;
     border-radius: 50%;
     margin-left: 0px;
-    background-color: #F6FFFA;
+    background-color: #618685;
     color: #F39C12;
     
     position: relative;
@@ -51,9 +50,16 @@
     width: 40%;
     padding: 12px;
     margin: 0px 0px 40px 20px;
-    background-color: #EFE3F9;
+    background-color: #fefbd8;
     border-radius: 8px;
     position: relative;
+    
+}
+
+.Timeline-content p {
+    /*Limiting height*/
+    max-height: 100px;
+    overflow: hidden;
 }
 
 .Timeline-content::before {
@@ -64,7 +70,7 @@
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #EFE3F9;
+    border-right: 7px solid #fefbd8;
 }
 /*@media specifications for bigger screens*/
 
@@ -97,7 +103,7 @@
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-left: 7px solid #EFE3F9; 
+    border-left: 7px solid #fefbd8; 
 }}
 
 
@@ -105,6 +111,58 @@
 .Timeline-date::before {
     margin-right: 0px;
 } }
+
+
+
+
+/*Timeline-Container right*/
+
+.Timeline-container-right {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.Timeline-container-right::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 0;
+    width: 4px;
+    background-color: #826F92;
+    height: 100%;
+    margin-right: -2px;
+}
+.Timeline-content-right {
+    width: 40%;
+    padding: 12px;
+    margin: 0px 0px 40px 20px;
+    background-color: #EFE3F9;
+    border-radius: 8px;
+    position: relative;
+}
+
+/*
+@media only screen and (min-width: 700px) {
+.Timeline-content-right::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-left: 7px solid #EFE3F9;
+}} 
+
+
+/*Timeline-Interrupt*/
 
 .Timeline-interrupt {
     padding-top: 50px;
@@ -125,3 +183,10 @@
     display: table;
     clear: both;
 }
+
+.cd-read-more {
+  float: right;
+  padding: 12px 18px;
+  background: #4A90E2;
+  color: white;
+  border-radius: 5px; }
